@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  src: url(../fonts/HelveticaNeueCyr-Medium.woff);
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-weight: 800;
+  src: url(../fonts/HelveticaNeueCyr-Bold.woff);
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-weight: 200;
+  src: url(../fonts/HelveticaNeueCyr-Light.woff);
+}
+.footer {
+  position: relative;
+  z-index: 2;
+  background-color: #2A2967;
+}
+.footer .container {
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 75px;
+}
+.footer__menu-item {
+  margin: 0 0 12px 0;
+}
+.footer__menu-item a {
+  font-size: 35px;
+  color: #AFE6DF;
+  font-family: 'Helvetica Neue';
+  font-weight: 200;
+}
+.footer__menu-item a:hover {
+  text-decoration: underline;
+}
+.footer__text {
+  max-width: 1081px;
+  text-align: center;
+}
+.footer__text-firstItem {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  line-height: 23px;
+}
+.footer__text-secondItem {
+  color: #AFE6DF;
+  font-size: 10px;
+  line-height: 11px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  margin: 54px 0 0 0;
+}
+.footer__link {
+  display: flex;
+  flex-direction: column;
+}
+.footer__link-item {
+  margin: 0 0 19px 0;
+}
+.footer__link-item:hover {
+  cursor: pointer;
+}
+@media (max-width: 1680px) {
+  .footer__menu-item a {
+    font-size: 24px;
+  }
+  .footer__text {
+    padding: 0 40px;
+  }
+  .footer__text-firstItem {
+    font-size: 15px;
+  }
+  .footer__text-secondItem {
+    margin: 40px 0 0 0;
+  }
+  .footer__link-item {
+    width: 40px;
+    margin: 0 0 12px 0;
+  }
+}
+@media (max-width: 1340px) {
+  .footer__menu-item {
+    margin: 0 0 7px 0;
+  }
+  .footer__menu-item a {
+    font-size: 18px;
+  }
+  .footer__text-firstItem {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .footer__link-item {
+    width: 35px;
+  }
+  .footer__text-secondItem {
+    margin: 20px 0 0 0;
+  }
+}
+@media (max-width: 570px) {
+  .footer .container {
+    padding: 18px;
+  }
+  .footer__menu-item {
+    display: flex;
+    align-items: center;
+    margin: 0 0 6px 0;
+  }
+  .footer__menu-item a {
+    font-size: 7px;
+  }
+  .footer__text-firstItem {
+    font-size: 5px;
+    line-height: 6px;
+  }
+  .footer__text-secondItem {
+    font-size: 3px;
+    line-height: 4px;
+    margin: 12px 0 0 0;
+  }
+  .footer__link-item {
+    width: 10.5px;
+    margin: 0 0 6px 0;
+  }
+}
