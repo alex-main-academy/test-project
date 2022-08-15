@@ -24,9 +24,6 @@ ul {
   font-weight: 200;
   src: url(../fonts/HelveticaNeueCyr-Light.woff);
 }
-body {
-  background: url(../img/body__back.png) no-repeat center top / cover;
-}
 .menu__link-mobile {
   display: none;
 }
