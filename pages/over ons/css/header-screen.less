@@ -56,9 +56,31 @@ ul {
 .menu__link-block {
     display: none;
 }
+//menu__burger
 .menu__burger {
-    display: none;
+    z-index: 10;
+    position: absolute;
+    right: 17px;
+    top: 70px;
+    width: 94px;
+    opacity: 0;
+    transition-duration: 600ms;
 }
+.menu__burger-item {
+    text-align: center;
+    background: @dark-blue;
+    margin: 5px 0 0 0;
+    padding: 1.5px 0;
+    border-radius: 18px;
+    border: 2px solid @lite-green;
+    a {
+        font-size: 13px;
+        font-weight: 400;
+        color: #AFE6DF;
+        font-family: 'Helvetica Neue';
+    }
+}
+///---------
 .container {
     margin: auto auto;
 }
@@ -86,6 +108,9 @@ ul {
             text-decoration: underline;
         }
     }
+}
+.menu__item-item.active {
+    text-decoration: underline;
 }
 
 //--------------------------
@@ -267,9 +292,10 @@ ul {
 
         a {
             margin: 0 6px 0 0;
-            font-size: 15px;
-            font-weight: 800;
+            font-size: 13px;
+            font-weight: 400;
             color: @lite-green;
+            font-family: 'Helvetica Neue';
         }
     }
     .menu__link-block {
