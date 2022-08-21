@@ -130,7 +130,7 @@ body {
 //time for 1680px screens
 @media (max-width: 1680px) {
 	.time__border {
-		height: 670px;
+		height: 620px;
 		top: 35px;
 	}
 	.time__title {
@@ -157,6 +157,7 @@ body {
 		}
 	}
 	.time__subtitle {
+		margin: 40px 0 0 0;
 		h1 {
 			font-size: 70px;
 		}
@@ -165,7 +166,7 @@ body {
 //time for 1340px screens
 @media (max-width: 1340px) {
 	.time__border {
-		height: 580px;
+		height: 520px;
 		top: 35px;
 	}
 	.time__title {
@@ -207,8 +208,8 @@ body {
 		background: none;
 	}
 	.time__border {
-		height: 300px;
-		top: 35px;
+		height: 265px;
+		top: 40px;
 	}
 	.time__title {
 		h1 {
@@ -887,6 +888,34 @@ body {
 	display: flex;
 	justify-content: center;
 }
+.slider__decor-left {
+	position: absolute;
+	z-index: 10;
+	transform: rotate(-90deg);
+	top: 200px;
+	left: -55px;
+}
+.slider__decor-top {
+	position: absolute;
+	z-index: 10;
+	top: -42px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.slider__decor-top2 {
+	position: absolute;
+	z-index: 10;
+	top: -10px;
+	left: 40%;
+	transform: translate(-40%);
+}
+@media(max-width:1340px) {
+	.slider__decor-left {
+		width: 170px;
+		top: 130px;
+		left: -30px;
+	}
+}
 .party__slider {
 	width: 50%;
 }
@@ -902,6 +931,15 @@ body {
 		padding: 0 10px !important;
 	}
 	.party__decor-figure {
+		display: none;
+	}
+	.slider__decor-left {
+		display: none;
+	}
+	.slider__decor-top {
+		display: none;
+	}
+	.slider__decor-top2 {
 		display: none;
 	}
 	.party__decor-triangle {
@@ -987,6 +1025,7 @@ body {
 
         .container {
             padding: 10px 0;
+			border: 2px solid @lite-green;
         }
     }
 	.promo__title {

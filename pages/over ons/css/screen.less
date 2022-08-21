@@ -49,7 +49,7 @@ ul {
 
 //about section
 body {
-    background: url(../img/body-back.png) no-repeat center top/100%;
+    background: url(../img/body-back.png) no-repeat center top/cover;
 }
 .about {
     background: url(../img/about-head-back.png) no-repeat center center/100%;
@@ -76,7 +76,7 @@ body {
     top: 103px;
     left: 50%;
     transform: translate(-50%);
-    max-width: calc(100% - 75px);
+    max-width: calc(100%-75px);
     height: 565px;
     z-index: 0;
 }
@@ -260,6 +260,13 @@ body {
     width: 60%;
     margin: 0 0 0 -90px;
 }
+.info__slider-decor {
+    position: absolute;
+    width: 200px;
+    top: 150px;
+    right: -110px;
+    transform: rotate(-90deg);
+}
 .info__title {
     font-size: 65px;
     color: @lite-green;
@@ -376,6 +383,11 @@ body {
         border: 2px solid @lite-green;
         width: 40%;
         margin: 0 0 0 -40px;
+    }
+    .info__slider-decor {
+        width: 100px;
+        right: -55px;
+        top: 100px;
     }
     .info__title {
         font-size: 18px;

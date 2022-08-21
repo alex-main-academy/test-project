@@ -114,7 +114,7 @@ body {
 }
 @media (max-width: 1680px) {
   .time__border {
-    height: 670px;
+    height: 620px;
     top: 35px;
   }
   .time__title h1 {
@@ -137,13 +137,16 @@ body {
   .time__button a {
     font-size: 25px;
   }
+  .time__subtitle {
+    margin: 40px 0 0 0;
+  }
   .time__subtitle h1 {
     font-size: 70px;
   }
 }
 @media (max-width: 1340px) {
   .time__border {
-    height: 580px;
+    height: 520px;
     top: 35px;
   }
   .time__title h1 {
@@ -178,8 +181,8 @@ body {
     background: none;
   }
   .time__border {
-    height: 300px;
-    top: 35px;
+    height: 265px;
+    top: 40px;
   }
   .time__title h1 {
     font-size: 25px;
@@ -201,8 +204,8 @@ body {
   .clock__second h2 {
     font-size: 25px;
     border: 3px solid #d2076970;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
   .clock__day p,
   .clock__hour p,
@@ -245,9 +248,10 @@ body {
   .clock__hour h2,
   .clock__minute h2,
   .clock__second h2 {
-    font-size: 20px;
+    font-size: 25px;
     border: 3px solid #d2076970;
-    padding: 8px;
+    width: 35px;
+    height: 35px;
   }
   .clock__day p,
   .clock__hour p,
@@ -1103,6 +1107,27 @@ body {
   max-width: 1700px;
   margin: auto auto;
 }
+.slider__decor-left {
+  position: absolute;
+  z-index: 10;
+  transform: rotate(-90deg);
+  top: 200px;
+  left: -55px;
+}
+.slider__decor-top {
+  position: absolute;
+  z-index: 10;
+  top: -42px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.slider__decor-top2 {
+  position: absolute;
+  z-index: 10;
+  top: -10px;
+  left: 40%;
+  transform: translate(-40%);
+}
 .party__top,
 .party__bottom {
   display: flex;
@@ -1110,6 +1135,13 @@ body {
 }
 .party__slider {
   width: 50%;
+}
+@media (max-width: 1340px) {
+  .slider__decor-left {
+    width: 170px;
+    top: 130px;
+    left: -30px;
+  }
 }
 @media (max-width: 570px) {
   .party__subtitle {
@@ -1123,6 +1155,15 @@ body {
     padding: 0 10px !important;
   }
   .party__decor-figure {
+    display: none;
+  }
+  .slider__decor-left {
+    display: none;
+  }
+  .slider__decor-top {
+    display: none;
+  }
+  .slider__decor-top2 {
     display: none;
   }
   .party__decor-triangle {
@@ -1205,6 +1246,7 @@ body {
   }
   .promo .container {
     padding: 10px 0;
+    border: 2px solid #AFE6DF;
   }
   .promo__title {
     font-size: 20px;

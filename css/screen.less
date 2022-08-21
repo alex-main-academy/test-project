@@ -56,7 +56,7 @@ body {
     z-index: 2;
 
     .container {
-        max-width: 1770px;
+        max-width: 1712px;
         margin: auto auto;
         padding: 120px 70px 0 70px;
         display: flex;
@@ -91,14 +91,22 @@ body {
     margin: 70px 0 50px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: 1712px;
 }
 .slider__image {
     position: relative;
-    img {
-        max-width: 100%;
+    border: 5px solid @lite-green;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    max-width: 1712px;
+    .slider__image-item {
+        width: 100%;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
     }
+}
+.popular__slider-image {
+    border: 5px solid @dark-blue;
 }
 .slider__image-decor {
     position: absolute;
@@ -106,25 +114,28 @@ body {
     left: 100%;
     transform: translate(-100%);
 }
-// .slider__image-figure {
-//     position: absolute;
-//     top: 50%;
-//     left: 97%;
-//     transform: translate(0, -50%);
-// }
+.slider__image-figure {
+    position: absolute;
+    transform: rotate(90deg);
+    right: -80px;
+    top: 150px;
+    width: 180px;
+}
 .slider__text {
     max-width: 1712px;
     padding: 0 0 120px 0;
-    margin: -5px 0 0 0;
+    margin: -10px 0 0 0;
     background-color: @dark-blue;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
     box-shadow: 0px 7px 3px -1px rgba(0, 0, 0, 0.16);
     position: relative;
     z-index: 2;
+    border-top: 5px solid @lite-green;
 }
 .popular__slider-text {
     background-color: @lite-green;
+    border-top: 5px solid @dark-blue;
 }
 .slider__pagination {
     position: absolute;
@@ -400,6 +411,7 @@ body {
 
         .container {
             padding: 10px 0;
+            border: 2px solid @lite-green;
         }
     }
     .image {
@@ -419,6 +431,17 @@ body {
             padding: 30px 0 15px 0;
         }
     }
+    .slider__image-figure {
+        width: 50px;
+        top: 35px;
+        right: -23px;
+    }
+    .slider__image {
+        border: 2px solid @lite-green;
+    }
+    .popular__slider-image {
+        border: 2px solid @dark-blue;
+    }
     .popular__slider {
         margin: 30px 0 30px 0;
     }
@@ -426,7 +449,7 @@ body {
         margin: 5px 0 35px 0;
     }
     .slider__image-decor {
-        width: 50px;
+        width: 30px;
     }
     .slider__pagination {
         width: 60px;
@@ -442,6 +465,10 @@ body {
     }
     .slider__text {
         padding: 0 0 15px 0;
+        border-top: 2px solid @lite-green;
+    }
+    .popular__slider-text {
+        border-top: 2px solid @dark-blue;
     }
     .slider__title {
         font-size: 18px;

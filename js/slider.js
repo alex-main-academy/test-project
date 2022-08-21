@@ -1,4 +1,4 @@
-let imgSrcArr = ['./img/header-img1.png', './img/header-img2.png']
+let imgSrcArr = ['./img/header-img1.jpg', './img/header-img2.jpg']
 
 let sliderImg = document.querySelector('.slider__image-item');
 let secondSliderImg = document.querySelector('.popular__image-item')
