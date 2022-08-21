@@ -11,7 +11,9 @@ ul {
     padding: 0;
 }
 // all settings for the website end
-
+h1 {
+    font-family: 'Abolition Regular', Helvetica, Arial, sans-serif !important;
+}
 
 
 // color variables for the website
@@ -45,6 +47,14 @@ ul {
     font-weight: 200;
     src: url(../fonts/HelveticaNeueCyr-Light.woff);
 }
+@font-face {
+    font-family: 'Abolition Regular';
+    src: url('../fonts/abolition-regular-webfont.eot');
+    src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/abolition-regular-webfont.woff') format('woff'),
+        url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
 
 
 
@@ -125,7 +135,7 @@ ul {
     position: absolute;
     z-index: 1;
     max-width: 90%;
-    height: 1250px;
+    height: 830px;
     left: 50%;
     top: 30px;
     transform: translate(-50%);
@@ -138,7 +148,7 @@ ul {
     h1 {
         font-size: 100px;
         line-height: 133px;
-        font-family: 'Helvetica Neue';
+        font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
         font-weight: 200;
         color: @dark-blue;
     }
@@ -160,6 +170,7 @@ ul {
     }
 }
 .header__subtitle {
+    position: relative;
     text-align: center;
     margin: 110px 0 0 0;
     padding: 0 0 100px 0;
@@ -168,12 +179,18 @@ ul {
     h1 {
         font-size: 100px;
         line-height: 133px;
-        font-family: 'Helvetica Neue';
+        font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
         font-weight: 200;
         color: @dark-blue;
     }
 }
-
+.header__top-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    cursor: pointer;
+}
 
 
 
@@ -189,7 +206,7 @@ ul {
     }
     //------------------------------------
     .header__back {
-        height: 770px;
+        height: 520px;
     }
     .header__title {
         h1 {
@@ -211,6 +228,10 @@ ul {
             line-height: 70px;
         }
     }
+    .header__top-arrow {
+        width: 50px;
+        bottom: 20px;
+    }
 }
 
 //media for 1340px screens
@@ -224,7 +245,7 @@ ul {
         }
     }
     .header__back {
-        height: 600px;
+        height: 400px;
     }
     .header__button {
         margin: 130px 0 0 0;
@@ -241,6 +262,10 @@ ul {
             line-height: 50px;
         }
     }
+    .header__top-arrow {
+        width: 40px;
+        bottom: 40px;
+    }
 }
 //media for 570px screens
 @media(max-width:570px) {
@@ -251,7 +276,7 @@ ul {
         background: url(../img/header-back2.png) no-repeat center center/570px;
     }
     .header__back {
-        height: 220px;
+        height: 148px;
     }
     .header__title {
         padding: 35px 0 0 0;
@@ -274,6 +299,9 @@ ul {
             font-size: 20px;
             line-height: 20px;
         }
+    }
+    .header__top-arrow {
+        display: none;
     }
     .header__menu.menu {
         background: none;

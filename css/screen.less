@@ -1,7 +1,12 @@
+@import url(//db.onlinewebfonts.com/c/8caff23b58eee77b5663fa1bef052d21?family=AbolitionW00-Lines);
 // all settings for the website start
 * {
     margin: 0;
     padding: 0;
+
+    h1 {
+        font-family: 'AbolitionW00-Lines' sans-serif !important;
+    }
 }
 a {
     text-decoration: none;
@@ -10,6 +15,7 @@ ul {
     list-style: none;
     padding: 0;
 }
+
 // all settings for the website end
 
 
@@ -45,6 +51,15 @@ ul {
     font-weight: 200;
     src: url(../fonts/HelveticaNeueCyr-Light.woff);
 }
+@font-face {
+    font-family: 'Abolition Round';
+    src: url('Abolition-Round.eot');
+    src: url('Abolition-Round.eot?#iefix') format('embedded-opentype'),
+    url('Abolition-Round.woff') format('woff'),
+    url('Abolition-Round.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 body {
@@ -76,7 +91,7 @@ body {
         padding: 40px 0 10px 0;
         font-size: 100px;
         color: @pink;
-        font-family: 'Helvetica Neue';
+        font-family: 'Abolition' sans-serif;
         font-weight: 200;
         background: url(../img/blue-block.png) no-repeat center center;
     }
@@ -99,6 +114,7 @@ body {
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
     max-width: 1712px;
+    background: @lite-green;
     .slider__image-item {
         width: 100%;
         border-top-left-radius: 18px;
@@ -107,6 +123,7 @@ body {
 }
 .popular__slider-image {
     border: 5px solid @dark-blue;
+    background: @dark-blue;
 }
 .slider__image-decor {
     position: absolute;

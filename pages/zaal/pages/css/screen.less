@@ -10,6 +10,9 @@ ul {
     list-style: none;
     padding: 0;
 }
+h1 {
+    font-family: 'Abolition Regular', Helvetica, Arial, sans-serif !important;
+}
 // all settings for the website end
 
 
@@ -44,6 +47,13 @@ ul {
     font-family: 'Helvetica Neue';
     font-weight: 200;
     src: url(../fonts/HelveticaNeueCyr-Light.woff);
+}
+@font-face {
+    font-family: 'Abolition Regular';
+    src: url('../fonts/abolition-regular-webfont.eot');
+    src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/abolition-regular-webfont.woff') format('woff'),
+        url('../fonts/abolition-regular-webfont.ttf') format('truetype');
 }
 
 
@@ -108,12 +118,13 @@ body {
     transform: scale(-1,-1);
 }
 .verh__slider {
-    border-radius: 18px;
     background: @dark-blue;
+    border-radius: 18px;
 }
 .verh__slider-item {
     max-width: 100%;
     border-radius: 18px;
+    border: 5px solid @dark-blue;
 }
 .verh__block {
     border: 5px solid @dark-blue;
@@ -388,8 +399,10 @@ body {
         }
     }
     .verh__image {
-        width: 100%;
-        border: 1px solid @dark-blue;
+        width: 100.5%;
+    }
+    .verh__slider-item {
+        border: 2px solid @dark-blue;
     }
     .slick-dots {
         bottom: -10px;

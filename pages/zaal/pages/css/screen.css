@@ -9,6 +9,9 @@ ul {
   list-style: none;
   padding: 0;
 }
+h1 {
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif !important;
+}
 @font-face {
   font-family: 'Helvetica Neue';
   font-weight: 400;
@@ -23,6 +26,11 @@ ul {
   font-family: 'Helvetica Neue';
   font-weight: 200;
   src: url(../fonts/HelveticaNeueCyr-Light.woff);
+}
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/abolition-regular-webfont.woff') format('woff'), url('../fonts/abolition-regular-webfont.ttf') format('truetype');
 }
 body {
   background: url(../img/body-back.png) no-repeat center top / cover;
@@ -84,12 +92,13 @@ body {
   transform: scale(-1, -1);
 }
 .verh__slider {
-  border-radius: 18px;
   background: #2A2967;
+  border-radius: 18px;
 }
 .verh__slider-item {
   max-width: 100%;
   border-radius: 18px;
+  border: 5px solid #2A2967;
 }
 .verh__block {
   border: 5px solid #2A2967;
@@ -330,8 +339,10 @@ body {
     padding: 40px 15px 0 15px;
   }
   .verh__image {
-    width: 100%;
-    border: 1px solid #2A2967;
+    width: 100.5%;
+  }
+  .verh__slider-item {
+    border: 2px solid #2A2967;
   }
   .slick-dots {
     bottom: -10px;

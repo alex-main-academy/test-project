@@ -9,6 +9,9 @@ ul {
   list-style: none;
   padding: 0;
 }
+h1 {
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif !important;
+}
 @font-face {
   font-family: 'Helvetica Neue';
   font-weight: 400;
@@ -24,8 +27,13 @@ ul {
   font-weight: 200;
   src: url(../fonts/HelveticaNeueCyr-Light.woff);
 }
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/abolition-regular-webfont.woff') format('woff'), url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
 body {
-  background: url(../img/body-back-decor.png) no-repeat center top / 100%, url(../img/body-back.png) no-repeat center top / 100%;
+  background: url(../img/body-back-decor.png) no-repeat center top / cover, url(../img/body-back.png) no-repeat center top / cover;
 }
 .time {
   font-family: 'Helvetica Neue';
@@ -40,7 +48,7 @@ body {
   left: 50%;
   transform: translate(-50%);
   max-width: 100%;
-  height: 800px;
+  height: 770px;
   z-index: 1;
 }
 .time__title {
@@ -112,9 +120,16 @@ body {
   color: #2A2967;
   font-weight: 200;
 }
+.time__top-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+  bottom: -80px;
+}
 @media (max-width: 1680px) {
   .time__border {
-    height: 620px;
+    height: 600px;
     top: 35px;
   }
   .time__title h1 {
@@ -143,10 +158,14 @@ body {
   .time__subtitle h1 {
     font-size: 70px;
   }
+  .time__top-arrow {
+    bottom: -60px;
+    width: 50px;
+  }
 }
 @media (max-width: 1340px) {
   .time__border {
-    height: 520px;
+    height: 500px;
     top: 35px;
   }
   .time__title h1 {
@@ -172,6 +191,10 @@ body {
   .time__subtitle h1 {
     font-size: 50px;
   }
+  .time__top-arrow {
+    bottom: -50px;
+    width: 40px;
+  }
 }
 @media (max-width: 570px) {
   body {
@@ -181,7 +204,7 @@ body {
     background: none;
   }
   .time__border {
-    height: 265px;
+    height: 255px;
     top: 40px;
   }
   .time__title h1 {
@@ -223,13 +246,16 @@ body {
   .time__subtitle h1 {
     font-size: 25px;
   }
+  .time__top-arrow {
+    display: none;
+  }
 }
 @media (max-width: 430px) {
   body {
     background: url(../img/time-back.png) no-repeat center -50px/700px, url(../img/body-back-mobile.png) no-repeat center top / cover;
   }
   .time__border {
-    height: 225px;
+    height: 215px;
     top: 38px;
   }
   .time__title h1 {
@@ -250,8 +276,8 @@ body {
   .clock__second h2 {
     font-size: 25px;
     border: 3px solid #d2076970;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
   }
   .clock__day p,
   .clock__hour p,
@@ -369,7 +395,7 @@ body {
 }
 .calendar {
   margin: 80px 0 0 0;
-  padding: 0 30px;
+  padding: 0 60px;
 }
 .calendar .container {
   position: relative;
@@ -569,11 +595,10 @@ body {
 }
 @media (max-width: 1680px) {
   .calendar .container {
-    width: 1000px;
-    padding: 0 0 50px 0;
+    padding: 0 100px 50px 100px;
   }
   .calendar__month {
-    width: 700px;
+    width: 100%;
   }
   .calendar__month-title {
     font-size: 50px;
@@ -604,33 +629,31 @@ body {
   }
   .calendar__days .day {
     font-size: 30px;
-    height: 100px;
+    height: 170px;
   }
 }
 @media (max-width: 1340px) {
   .calendar .container {
-    width: 800px;
-    padding: 0 0 50px 0;
+    padding: 0 100px 50px 100px;
   }
   .calendar__month {
-    width: 650px;
+    width: 100%;
   }
   .calendar__days .day {
     font-size: 30px;
-    height: 90px;
+    height: 130px;
   }
 }
 @media (max-width: 570px) {
   .calendar {
     margin: 20px 0 20px 0;
-    padding: 0 10px;
+    padding: 0 30px;
   }
   .calendar .container {
-    width: 300px;
-    padding: 0;
+    padding: 0 0 30px 0;
   }
   .calendar__month {
-    width: 250px;
+    width: 300px;
   }
   .calendar__month-title {
     font-size: 20px;
@@ -666,7 +689,7 @@ body {
   }
   .calendar__days .day {
     font-size: 10px;
-    height: 35px;
+    height: 40px;
   }
 }
 .main__title {
@@ -677,7 +700,7 @@ body {
   font-weight: 200;
   font-size: 100px;
   background: #2A2967;
-  width: 710px;
+  width: 760px;
   padding: 10px;
   border-radius: 18px;
 }
@@ -685,7 +708,7 @@ body {
   .main__title {
     font-size: 70px;
     margin: 70px auto 0 auto;
-    width: 500px;
+    width: 540px;
   }
 }
 @media (max-width: 1340px) {
@@ -711,6 +734,9 @@ body {
   padding: 0 60px;
   position: relative;
 }
+.slider .slider__item {
+  border: 5px solid #AFE6DF;
+}
 .slider__decor-triangle {
   position: absolute;
   top: 15px;
@@ -725,10 +751,10 @@ body {
 }
 .slider__main {
   text-align: center;
-  border: 5px solid #AFE6DF;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   position: relative;
+  background: #AFE6DF;
 }
 .slider__item {
   max-width: 100%;
@@ -880,6 +906,10 @@ body {
   .slider .container {
     padding: 0 30px;
   }
+  .slider .slider__item {
+    border: 2px solid #AFE6DF;
+    background: #AFE6DF;
+  }
   .slider__decor-triangle {
     width: 20px;
     top: 10px;
@@ -891,7 +921,7 @@ body {
     width: 30px;
   }
   .slider__main {
-    border: 2px solid #AFE6DF;
+    background: #AFE6DF;
   }
   .slick-dots {
     bottom: -8px;
